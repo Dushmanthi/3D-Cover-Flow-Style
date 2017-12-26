@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ionic App</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/foundation.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/jquery.circular-carousel.css">
+  
+  <meta name="theme-color" content="#4e8ef7">
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- cordova.js required for cordova apps (remove if not needed) -->
+  <script src="cordova.js"></script>
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+
+  <link href="build/main.css" rel="stylesheet">
+  <!-- <link href="asssets/css/style.css" rel="stylesheet">
+  <link href="asssets/css/normalize.css" rel="stylesheet">
+  <link href="asssets/css/foundation.min.css" rel="stylesheet"> -->
+ 
+  
+</head>
+<body>
+
+  <!-- Ionic's root component and where the app will load -->
+  <ion-app></ion-app>
+
+<!-- external -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="./assets/data/ex.js"></script>
+ <script src="./assets/data/jquery.circular-carousel.js"></script>  
+<!-- <script src="../jquery.circular-carousel.js"></script> -->
+
+<div class="jquery-script-center">  
+  </div>
+  
+  <div class="row">
+    <ul class="carousel">
+      <li class="item active"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+      <li class="item"></li>
+    </ul>
+  </div>
+  <div class="controls">
+   <a href="#" class="previous">Previous</a> 
+   <a href="#" class="next">Next</a>
+  </div>
+  
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+  <script src="./assets/data/jquery.circular-carousel.js"></script> 
+  <script src="./assets/data/ex.js"></script>
+   -->
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
+
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
+
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="build/vendor.js"></script>
+
+  <!-- The main bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
+
+</body>
+</html>
